@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+    
+    
+    body{
+    background: linear-gradient(to right, #182e34, #181d23);
+    /* line-height: 1.6; */
+}
+header {
+    background-color: #ea1717;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+header h1{
+    font-family: "Edu QLD Hand", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.cal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    
+}
+button {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    margin: 8px;
+}
+
+.operation{
+    background-color: #40494b;
+    width: 260px;
+    height: 30px;
+    margin-bottom: 20px;
+    color: rgb(241, 241, 241);
+    font-size: 20px;
+}
+
+.num{
+    background-color: #0d1115;
+    color: rgb(204, 216, 227);
+}
+
+.operator{
+    color: green;
+    background-color: #222529;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.del{
+    color: #ea1717;
+    background-color: #222529;
+}
+
+.equals{
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(81, 157, 81, 0.724);
+}
+
+footer{
+    position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: px;
+/* background-color: black; */
+}
+
+footer span{
+    font-family: "Edu QLD Hand", cursive;
+    font-style: normal;
+
+}

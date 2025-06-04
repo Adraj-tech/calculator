@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Edu+QLD+Hand:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+       <h1>CALCULATOR</h1>
+
+    </header>
+
+<main>
+    <div class="cal">
+        <input type="text" class="operation" id="operation" placeholder="00" readonly>
+        <div class="but">
+            <button class="clear del" onclick="clearDisplay()">C</button>
+            <button class="del" onclick="">DEL</button>
+            <button class="per operator" onclick="put('%')">%</button>
+            <button class="div operator" onclick="put('÷')">÷</button>
+            <br>
+            <button class="seven num" onclick="put('7')">7</button>
+            <button class="eight num" onclick="put('8')">8</button>
+            <button class="nine num" onclick="put('9')">9</button>
+            <button class="mul operator" onclick="put('*')">X</button>
+            <br>
+            <button class="four num" onclick="put('4')">4</button>
+            <button class="five num" onclick="put('5')">5</button>
+            <button class="six num" onclick="put('6')">6</button>
+            <button class="sub operator" onclick="put('-')">-</button>
+            <br>
+            <button class="one num" onclick="put('1')">1</button>
+            <button class="two num" onclick="put('2')">2</button>
+            <button class="three num" onclick="put('3')">3</button>
+            <button class="add operator" onclick="put('+')">+</button>
+            <br>
+            <button class="zero num" onclick="put('0')">0</button>
+            <button class="zeroes num" onclick="put('00')">00</button>
+            <button class="decimal operator" onclick="put('.')">.</button>
+            <button class="equals" onclick="sum()">=</button>
+        </div>
+    </div>
+</main>
+<script src="script.js"></script>
+</body>
+<footer>copyright © 2025 <span>Adarsh Raj. </span>All rights reserved.</footer>
+</html>
