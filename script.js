@@ -17,3 +17,8 @@ function sum() {
     document.getElementById("operation").value = "Error";
   }
 }
+
+function del() {
+  var numberOfChar = document.getElementById("operation").value.length - 1;
+  document.getElementById("operation").value = document.getElementById('operation').value.slice(0, numberOfChar);
+}
