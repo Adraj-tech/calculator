@@ -8,7 +8,10 @@ function clearDisplay() {
 
 function sum() {
   try {
-    const result = eval(document.getElementById("operation").value);
+    let exp = document.getElementById("operation").value;
+    exp = exp.replace(/÷/g, '/'); 
+    const result = eval(exp);
+    
     document.getElementById("operation").value = result;
   } catch (e) {
     document.getElementById("operation").value = "Error";
