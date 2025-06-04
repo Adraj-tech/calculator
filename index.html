@@ -21,33 +21,33 @@
         <input type="text" class="operation" id="operation" placeholder="00" readonly>
         <div class="but">
             <button class="clear del" onclick="clearDisplay()">C</button>
-            <button class="del" onclick="del()">DEL</button>
-            <button class="per operator" onclick="put('%')">%</button>
-            <button class="div operator" onclick="put('÷')">÷</button>
+            <button class="del" onclick="cleanDisplay(); del()">DEL</button>
+            <button class="per operator" onclick="cleanDisplay(); put('%')">%</button>
+            <button class="div operator" onclick="cleanDisplay(); put('÷')">÷</button>
             <br>
-            <button class="seven num" onclick="put('7')">7</button>
-            <button class="eight num" onclick="put('8')">8</button>
-            <button class="nine num" onclick="put('9')">9</button>
-            <button class="mul operator" onclick="put('*')">X</button>
+            <button class="seven num" onclick="cleanDisplay(); put('7')">7</button>
+            <button class="eight num" onclick="cleanDisplay(); put('8')">8</button>
+            <button class="nine num" onclick="cleanDisplay(); put('9')">9</button>
+            <button class="mul operator" onclick="cleanDisplay(); put('*')">X</button>
             <br>
-            <button class="four num" onclick="put('4')">4</button>
-            <button class="five num" onclick="put('5')">5</button>
-            <button class="six num" onclick="put('6')">6</button>
-            <button class="sub operator" onclick="put('-')">-</button>
+            <button class="four num" onclick="cleanDisplay(); put('4')">4</button>
+            <button class="five num" onclick="cleanDisplay(); put('5')">5</button>
+            <button class="six num" onclick="cleanDisplay(); put('6')">6</button>
+            <button class="sub operator" onclick="cleanDisplay(); put('-')">-</button>
             <br>
-            <button class="one num" onclick="put('1')">1</button>
-            <button class="two num" onclick="put('2')">2</button>
-            <button class="three num" onclick="put('3')">3</button>
-            <button class="add operator" onclick="put('+')">+</button>
+            <button class="one num" onclick="cleanDisplay(); put('1')">1</button>
+            <button class="two num" onclick="cleanDisplay(); put('2')">2</button>
+            <button class="three num" onclick="cleanDisplay(); put('3')">3</button>
+            <button class="add operator" onclick="cleanDisplay(); put('+')">+</button>
             <br>
-            <button class="zero num" onclick="put('0')">0</button>
-            <button class="zeroes num" onclick="put('00')">00</button>
-            <button class="decimal operator" onclick="put('.')">.</button>
-            <button class="equals" onclick="sum()">=</button>
+            <button class="zero num" onclick="cleanDisplay(); put('0')">0</button>
+            <button class="zeroes num" onclick="cleanDisplay(); put('00')">00</button>
+            <button class="decimal operator" onclick="cleanDisplay(); put('.')">.</button>
+            <button class="equals" onclick="cleanDisplay(); sum()">=</button>
         </div>
     </div>
 </main>
 <script src="script.js"></script>
 </body>
-<footer>copyright © 2025 <span>Adarsh Raj. </span>All rights reserved.</footer>
+<footer>copyright © 2025 <span>Adarsh Raj.</span> All rights reserved.</footer>
 </html>

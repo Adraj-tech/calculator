@@ -22,3 +22,10 @@ function del() {
   var numberOfChar = document.getElementById("operation").value.length - 1;
   document.getElementById("operation").value = document.getElementById('operation').value.slice(0, numberOfChar);
 }
+
+function cleanDisplay(){
+  let expression = document.getElementById("operation").value;
+  if(expression === "Error" || expression === "function Error() { [native code] }" || expression === "undefined"){
+   document.getElementById("operation").value = "";
+}
+ }
