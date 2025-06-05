@@ -7,6 +7,7 @@
     
     body{
     background: linear-gradient(to right, #182e34, #181d23);
+    user-select: none;
     /* line-height: 1.6; */
 }
 header {

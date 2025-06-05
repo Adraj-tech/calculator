@@ -4,23 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    
     <link href="style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Edu+QLD+Hand:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
        <h1>CALCULATOR</h1>
-
     </header>
 
 <main>
     <div class="cal">
         <input type="text" class="operation" id="operation" placeholder="00" readonly>
         <div class="but">
-            <button class="clear del" onclick="clearDisplay()">C</button>
+            <button class="clear del" onclick="clearDisplay()">AC</button>
             <button class="del" onclick="cleanDisplay(); del()">DEL</button>
             <button class="per operator" onclick="cleanDisplay(); put('%')">%</button>
             <button class="div operator" onclick="cleanDisplay(); put('÷')">÷</button>
@@ -44,10 +45,14 @@
             <button class="zeroes num" onclick="cleanDisplay(); put('00')">00</button>
             <button class="decimal operator" onclick="cleanDisplay(); put('.')">.</button>
             <button class="equals" onclick="cleanDisplay(); sum()">=</button>
+            </div>
+            
         </div>
-    </div>
+    
 </main>
-<script src="script.js"></script>
-</body>
 <footer>copyright © 2025 <span>Adarsh Raj.</span> All rights reserved.</footer>
+<script src="script.js"></script>
+
+</body>
+
 </html>
